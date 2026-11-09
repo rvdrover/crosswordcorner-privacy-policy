@@ -36,7 +36,10 @@
       <li><strong>Hints and Premium status:</strong> your hint balance and whether a Premium subscription is active.</li>
       <li><strong>Preferences:</strong> theme, sound and other settings.</li>
     </ul>
-    <p>Progress is stored on your device first so the App works offline, and is backed up to our database (Google Cloud Firestore) under your anonymous ID so you can continue after reinstalling. We do not collect your real name, email address, contacts, location, photos or files, and we never sell personal data.</p>
+    <p>Progress is stored on your device first so the App works offline, and is backed up to our database (Google Cloud Firestore) under your anonymous ID so you can continue after reinstalling. Apart from the optional Google backup below, we do not collect your real name, email address, contacts, location, photos or files, and we never sell personal data.</p>
+
+    <h2>Google Backup (optional)</h2>
+    <p>You can tap <strong>Connect Google</strong> (at the start or later in Settings) to link a Google account to your anonymous player ID, so your progress can be restored on a new phone. This uses Firebase Authentication's Google sign-in. We then store the Google account identifier and the email address Google provides, only to find your progress again; we never post anything to your Google account or read your Google data. The App works fully without connecting, and a deletion request (below) removes the link.</p>
 
     <h2>Rank Board</h2>
     <p>The Rank board shows your display name and your star total to other players, together with your position. Nothing else about you is shown. You can change your display name at any time in <strong>Settings</strong>, and a deletion request (below) removes you from the board.</p>
@@ -46,7 +49,7 @@
     <ul>
       <li><strong>Google AdMob (free players only):</strong> shows advertisements, including optional videos you can watch to earn hints. AdMob may collect device identifiers (including the advertising ID), approximate location derived from IP address, ad interactions and diagnostics. Where the law requires it (for example in the EEA and UK), a consent form is shown before any ad is requested. Premium members see no ads.</li>
       <li><strong>Firebase Analytics and Crashlytics:</strong> help us understand which puzzles and features work and fix crashes. They receive anonymous events (such as "puzzle started", "puzzle solved", "hint used" and "paywall viewed") and technical crash details, identified only by a random installation ID. You can turn both off in <strong>Settings &gt; Share usage data</strong>.</li>
-      <li><strong>Firebase Authentication and Cloud Firestore:</strong> provide the anonymous player ID and store the progress described above.</li>
+      <li><strong>Firebase Authentication and Cloud Firestore:</strong> provide the anonymous player ID (and the optional Google link) and store the progress described above.</li>
       <li><strong>Google Play and the Apple App Store:</strong> handle Premium purchases. We never see your payment details; the store only tells the App whether a subscription is active.</li>
     </ul>
     <p>More about how Google handles this information:
@@ -79,7 +82,7 @@
     <p>Turn off <strong>Settings &gt; Share usage data</strong> at any time. No analytics or crash reports are sent after that.</p>
     <h3>What is deleted and what is kept</h3>
     <ul>
-      <li><strong>Deleted:</strong> your progress, display name, hint balance, Premium status record and Rank board entry, on request.</li>
+      <li><strong>Deleted:</strong> your progress, display name, hint balance, Premium status record, Rank board entry and any linked Google account identifier, on request.</li>
       <li><strong>Kept, by the stores:</strong> your purchase history stays with Google Play or Apple under their policies; we never hold it.</li>
       <li><strong>Kept, by Google:</strong> anonymous analytics events are held by Firebase for <strong>2 months</strong> and crash reports for <strong>90 days</strong>, identified only by a random installation ID that we cannot link to you. Advertising data is handled by AdMob under Google's policies; you can reset or delete your advertising ID in your device settings.</li>
     </ul>
